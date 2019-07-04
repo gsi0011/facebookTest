@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: FirstTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.438 s <<< FAILURE! - in FirstTest
+secondTest(FirstTest)  Time elapsed: 0.018 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Gurveers-MacBook-Pro.local', ip: '2601:41:200:371d:0:0:0:56d4', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '1.8.0_144'
+Driver info: driver.version: RemoteWebDriver
+	at FirstTest.setupTests(FirstTest.java:19)
+
