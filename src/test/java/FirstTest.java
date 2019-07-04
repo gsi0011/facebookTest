@@ -4,10 +4,12 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import pages.HomePage;
 
 public class FirstTest {
 
     static WebdriverFactory factory = new WebdriverFactory();
+    HomePage homePage = new HomePage();
 
     @BeforeClass
     public static void setupBrowser (){
@@ -21,5 +23,7 @@ public class FirstTest {
         factory.getDriver().findElement(By.id("pass")).sendKeys("jhgfdsjgjhvfhvbjh");
         factory.getDriver().findElement(By.id("u_0_2")).click();
         factory.getDriver().quit();
+
+        // homepage.login();
     }
 }
